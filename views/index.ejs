@@ -10,7 +10,7 @@
     <h1>HOME PAGE!</h1>
     <a href="/create-todo">Add Todo</a>
     <h2>All Todos:</h2>
-    <% if(blogs.length>1){ %>
+    <% if(blogs.length>=1){ %>
         <% blogs.forEach(blog=>{ %>
             <h1><%= blog.title %> <button class="delete" data-del="<%= blog._id %>">Delete</button></h1>
         <% }) %>
